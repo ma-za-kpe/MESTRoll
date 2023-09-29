@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "744808920185",
+    "project_id": "mestroll-59c57",
+    "storage_bucket": "mestroll-59c57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:744808920185:android:75e27186ffdf452045d0a8",
+        "android_client_info": {
+          "package_name": "com.mest.mestroll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "744808920185-s23sdd9vc9ibbmp6omo6ul8h4a72hebr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mest.mestroll",
+            "certificate_hash": "1a441e1b1af04c1f3a628760786ce228b23133d2"
+          }
+        },
+        {
+          "client_id": "744808920185-d0n5u7fjruqinh5vl7a4csin0kb6dhnt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1woLhQuikidChWIeiNc3MgPZmAz3LWy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "744808920185-d0n5u7fjruqinh5vl7a4csin0kb6dhnt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mestroll</string>
+    <string name="generic_error">Oops, an error has occurred …</string>
+    <string name="home">Home</string>
+    <string name="cancel">Cancel</string>
+    <string name="permission_location_rationale">In order to get the current location, we require the location permission to be granted.</string>
+</resources>
