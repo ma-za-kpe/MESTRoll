@@ -71,10 +71,10 @@ class MainActivity : ComponentActivity() {
                     RequestPermission(
                         permission = Manifest.permission.ACCESS_FINE_LOCATION.toString(),
                         {
-
+                            preferences.putLat(it)
                         },
                         {
-
+                            preferences.putLng(it)
                         }
                     )
                     MestrollApp(
@@ -137,7 +137,7 @@ class MainActivity : ComponentActivity() {
                             mLongitude.toString()
                         )
 
-                        Log.d("TAG", "RequestPermission: mLatitude ${mLatitude} mLongitude ${mLongitude}")
+                        Log.d("TAG", "Location... RequestPermission: mLatitude ${mLatitude} mLongitude ${mLongitude}")
                     }
                 }
             }

@@ -33,11 +33,12 @@ class MestrollRepositoryImpl @Inject constructor(
                     response: Response<LocationResponse?>
                 ) {
                     // save to
-                    Log.d("TAG", "onResponse: ${response.body()?.displayName.toString()}")
+                    Log.d("TAG", "location... 4 onResponse: ${response.body()?.displayName.toString()}")
                     preferences.putAddress(response.body()?.displayName.toString())
                 }
 
                 override fun onFailure(call: Call<LocationResponse?>, t: Throwable) {
+                    Log.d("TAG", "location... 5 compareLocation: ")
                     SnackbarManager.showMessage(SnackbarMessage.StringSnackbar("Error ${t.message}"))
                 }
             })

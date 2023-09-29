@@ -1,5 +1,6 @@
 package com.mest.mestroll.ui.vm
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.mest.mestroll.core.data.local.preferences.Preferences
@@ -25,10 +26,15 @@ class MainViewModel @Inject constructor(
 ): ViewModel() {
 
     fun compareLocation(): Boolean {
+        Log.d("TAG", "location... 3 compareLocation: ${preferences.getAddress()}")
+       return preferences.getAddress().contains("12, Aluguingtugui Street, East Legon, Accra, Ayawaso West Municipal District, Greater Accra Region, Ghana")
+    }
+
+    init {
         launchCatching {
+            Log.d("TAG", "location... 2 compareLocation: ${preferences.getLat()}")
             locationUseCase(preferences.getLat(), preferences.getLng())
         }
-       return preferences.getAddress().contains("12, Aluguingtugui Street, East Legon, Accra, Ayawaso West Municipal District, Greater Accra Region, Ghana")
     }
 
     val email = preferences.getEmail()
